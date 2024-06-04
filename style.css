@@ -8,7 +8,9 @@
 }
 
 body {
+  width: 100vw;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 html {
@@ -149,13 +151,9 @@ a:hover {
 section {
   padding-top: 4vh;
   height: 96vh;
-  margin: 0 10rem;
+  margin: 0;
   box-sizing: border-box;
   min-height: fit-content;
-}
-
-.section-container {
-  display: flex;
 }
 
 /* PROFILE SECTION */
@@ -165,9 +163,10 @@ section {
   justify-content: center;
   gap: 5rem;
   height: 80vh;
+  width: 100vw;
 }
 
-.section__pic-container {
+.section__pic-container-profile {
   display: flex;
   height: 400px;
   width: 400px;
@@ -176,9 +175,11 @@ section {
 
 .section-container {
   display: flex;
-  height: 400px;
-  width: 400px;
+  height: 80%;
+  width: 100vw;
   margin: auto 0;
+  gap: 2rem;
+  justify-content: space-between;
 }
 
 .section__text {
@@ -270,11 +271,17 @@ section {
 
 #about {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .about-containers {
-  gap: 2rem;
   margin-bottom: 2rem;
+  gap: 2rem;
+  display: flex;
   margin-top: 2rem;
 }
 
@@ -283,38 +290,37 @@ section {
   flex-direction: column;
 }
 
-.about-containers,
-.about-details-container {
+.about-pic {
+  border-radius: 2rem;
   display: flex;
 }
 
-.about-pic {
-  border-radius: 2rem;
-}
-
 .arrow {
-  position: absolute;
-  right: -5rem;
+  position: fixed;
+  right: 2rem;
   bottom: 2.5rem;
+  z-index: 2;
 }
 
 .details-container {
   padding: 1.5rem;
-  flex: 1;
   background: white;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
-}
-
-.section-container {
-  gap: 4rem;
-  height: 80%;
+  width: 20rem;
 }
 
 .section__pic-container {
+  display: block;
+  width: 300px;
   height: 400px;
-  width: 400px;
-  margin: auto 0;
+}
+
+.about-pic {
+  width: 300px;
+}
+
+.text-container {
 }
