@@ -257,13 +257,13 @@ section {
   align-items: center;
   justify-content: center;
   width: 100%;
-  text-align: center; /* Centralizar o texto */
+  text-align: center;
 }
 
 .about-containers {
   display: flex;
   justify-content: center;
-  align-items: center; /* Centraliza verticalmente os itens */
+  align-items: center;
   gap: 2rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -316,8 +316,6 @@ section {
   margin: auto;
 }
 
-/* Adjustments for About section to align items properly */
-
 #about {
   display: flex;
   flex-direction: column;
@@ -343,4 +341,95 @@ section {
     flex-direction: column;
     align-items: center;
   }
+}
+
+/* PROJECTS SECTION */
+
+#projects {
+  margin-top: 10rem;
+  position: relative;
+}
+
+.color-container {
+  background: rgb(250, 250, 250);
+  border-color: rgb(163, 163, 163);
+}
+
+.project-img {
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+}
+
+.project-title {
+  margin: 1rem;
+  color: black;
+}
+
+.project-btn {
+  color: black;
+  justify-content: center;
+  display: block;
+  align-items: center;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  background: none;
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+
+.project-btn:hover {
+  cursor: pointer;
+  background: rgb(53, 53, 53);
+  color: white;
+  border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+.btn-container-project {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-direction: row;
+}
+
+/* CONTACT */
+
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+  margin: 2rem auto;
+  padding: 0.5rem;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+.contact-info-container p {
+  font-size: larger;
+}
+
+.contact-icon {
+  cursor: default;
+}
+
+.email-icon {
+  height: 2.5rem;
 }
