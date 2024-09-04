@@ -29,7 +29,7 @@
   }
 
   section {
-    margin: 0 5%;
+    margin: 0;
   }
 
   .section__pic-container {
@@ -63,7 +63,10 @@
     margin-bottom: 2rem;
   }
 
-  .about-containers,
+  .text-container p {
+    padding: 1rem;
+  }
+
   .contact-info-upper-container,
   .btn-container {
     flex-wrap: wrap;
